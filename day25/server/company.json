@@ -1,0 +1,21 @@
+{
+    "companies":[
+        {
+            "companyname": "cognizant",
+            "city":"chennai",
+            "state":"tamil nadu",
+            "turnover":1000000000,
+            "CEO":"Brian Hamphires"
+        
+        },
+        {
+            "companyname": "cognizant2",
+            "city":"kochi",
+            "state":"kerala",
+            "turnover":1000000001,
+            "CEO":"Brian Hamphires"
+        
+        }
+    ]
+
+}

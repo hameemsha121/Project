@@ -1,0 +1,25 @@
+<form [formGroup]="registerCompany">
+  <h2 class="text-center">ADD COMPANY</h2>
+  <p class="h6">Please fill the details</p>
+  <div class="form-group">
+    <input type="text" formControlName="companyname" placeholder="name of the company" name="companyname"
+      class="form-control" id="companyname">
+  </div>
+
+  <div class="form-group">
+    <input type="text" formControlName="city" placeholder="city" name="city" class="form-control" id="city">
+  </div>
+
+  <div class="form-group">
+    <input type="text" formControlName="state" placeholder="state" name="state" class="form-control" id="state">
+  </div>
+
+  <div class="form-group">
+    <input type="number" formControlName="turnover" placeholder="Turnover in Rs" class="form-control" name="turnover" id="turnover">
+  </div>
+
+  <div class="form-group">
+    <input type="text" formControlName="CEO" class="form-control" placeholder="CEO name" name="CEO" id="CEO">
+  </div>
+  <button class="btn btn-success" (click)="addCompany()" [disabled]="!registerCompany.valid">Add Company</button>
+</form>

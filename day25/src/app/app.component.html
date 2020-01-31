@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+<header>
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky">
+    <a class="navbar-brand" href="#">SMC</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      
+      <li class="nav-item active">
+        <a href="#" class="nav-link">Home</a>
+      </li>
+      <li class="nav-item">
+        <a [routerLink]="['/sign-up']" class="nav-link">Signup</a>
+      </li>
+      <li class="nav-item">
+        <a [routerLink]="['/aboutus']" class="nav-link">about us</a>
+      </li>
+      <li class="nav-item">
+        <a href="" (click)="logout()" class="nav-link">sign out</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+  <br>
+  <li class="nav-item "><div class="display-4 text-center bg-dark text-success"><b>STOCK MARKET CHARTS</b></div></li>
+</header>
+
+<main class="main">
+<router-outlet></router-outlet>
+
+</main>
+
+<footer class="page-footer fixed-bottom font-small white bg-dark text-warning">
+  <div class="footer text-center py-3">
+    2020 copyright
+  </div>
+</footer>
+</body>
+</html>
