@@ -1,0 +1,22 @@
+{
+  "exchange": [
+    {
+      "id": 100,
+      "exchangename": "BSE",
+      "about": "its a good exchange",
+      "address": "mumbai"
+    },
+    {
+      "id": 101,
+      "exchangename": "NSE",
+      "about": "asdfgh",
+      "address": "asdfgh"
+    },
+    {
+      "id": 102,
+      "exchangename": "NYSE",
+      "about": "nadheeha salam",
+      "address": "asdfgh"
+    }
+  ]
+}

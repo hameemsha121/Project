@@ -1,0 +1,28 @@
+{
+  "ipo": [
+    {
+      "id": 100,
+      "name": "Accenture",
+      "stockExchange": "NSE",
+      "priceShare": 567834562,
+      "noOfShare": 576,
+      "address": "asdf",
+      "city": "Shollinganaloor",
+      "state": "Kerala",
+      "pincode": 686765,
+      "date": "2020-02-12"
+    },
+    {
+      "id": 103,
+      "name": "Infosys",
+      "stockExchange": "NASDAQ",
+      "priceShare": 345664562,
+      "noOfShare": 325,
+      "Address": "Infosys Campus, Delton Street",
+      "city": "Mysore",
+      "state": "Karnataka",
+      "pincode": 786543,
+      "date": "02/06/2010"
+    }
+  ]
+}

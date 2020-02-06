@@ -1,0 +1,25 @@
+{
+  "companies": [
+    {
+      "id": 1,
+      "companyname": "Cognizant",
+      "city": "Kochi",
+      "turnover": 3456564,
+      "ceo": "Brian Hamphires"
+    },
+    {
+      "id": 2,
+      "companyname": "Tata Consultancy",
+      "city": "Pune",
+      "turnover": 986544,
+      "ceo": "bbb"
+    },
+    {
+      "id": "3",
+      "companyname": "yis",
+      "city": "hjk",
+      "turnover": 2345678,
+      "ceo": "dfghjk"
+    }
+  ]
+}
