@@ -1,0 +1,25 @@
+<div>
+    <table class="table">
+        <tr>
+            <th>Id</th>
+            <th>Company Code</th>
+            <th>stock Exchange</th>
+            <th>currentPrice</th>
+            <th>date/th>
+            <th>time</th>
+            <th>actions</th>
+        </tr>
+        <tr *ngFor="let stock of stockPrice">
+            <td>{{stock.id}}</td>
+            <td>{{stock.companyCode}}</td>
+            <td>{{stock.stockExchange}}</td>            
+            <td>{{stock.currentPrice}}</td>
+            <td>{{stock.date}}</td>
+            <td>{{stock.time}}</td>
+            <td>
+                <button class="btn btn-danger" (click)="deleteStockPrice(stock)">Delete</button>
+                <button class="btn btn-primary" (click)="updateStockPrice(stock)">Update</button>
+            </td>
+        </tr>  
+    </table>
+</div>
