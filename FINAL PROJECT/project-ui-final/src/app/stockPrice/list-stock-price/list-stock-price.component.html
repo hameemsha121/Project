@@ -1,0 +1,28 @@
+<div class="float-left">
+    <app-sidenav></app-sidenav>
+</div>
+<div class="table-responsive w-auto">
+    <table class="table table-dark">
+        <tr>
+            <th>ID</th>
+            <th>COMPANY CODE</th>
+            <th>STOCK EXCHANGE</th>
+            <th>CURRENT PRICE</th>
+            <th>DATE</th>
+            <th>TIME</th>
+            <th>ACTIONS</th>
+        </tr>
+        <tr *ngFor="let stock of stockPrices">
+            <td>{{stock.id}}</td>
+            <td>{{stock.companyCode}}</td>
+            <td>{{stock.stockExchange}}</td>            
+            <td>{{stock.currentPrice}}</td>
+            <td>{{stock.date}}</td>
+            <td>{{stock.time}}</td>
+            <td>
+                <button class="btn btn-danger" (click)="deleteStockPrice(stock)">Delete</button>
+                <button class="btn btn-primary" (click)="updateStockPrice(stock)">Update</button>
+            </td>
+        </tr>  
+    </table>
+</div>

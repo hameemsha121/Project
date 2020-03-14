@@ -1,0 +1,11 @@
+img{
+    min-width: 200px;
+    max-width:1500px;
+    min-height: 300px;
+    max-height: 700px;
+}
+.carousel-inner > .item {
+    height: 400px;
+ }
+ 
+    

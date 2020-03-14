@@ -1,0 +1,43 @@
+<a [routerLink]="['/user-profile']" class="text-light text-decoration-none mr-2 btn rounded border-light ">VIEW PROFILE</a>
+<a [routerLink]="['/login']" class="text-light text-decoration-none bg-danger btn rounded border-light float-right mx-3 my-auto" (click)="logout()">LOGOUT</a>
+<div class="container">
+    <div class="row">
+        <div class="card-deck col-12 pt-5">
+            <div class="pb-4 mx-auto">
+                <a [routerLink]="['/user-compare-companies']" style="text-decoration: none;">
+                    <div class="card bg-transparent" style="width: 150">
+                        <div class="card-header">
+                            <img src="../../../assets/source.gif" width="200" height="200">
+                        </div>
+                        <div class="card-body">
+                            <h2 class="text-center text-light">COMPARE<br/>COMPANY</h2>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            
+            <div class=" mx-auto">
+                <a [routerLink]="['/user-compare-sectors']" style="text-decoration: none;">
+                    <div class="card bg-transparent" style="width: 150">
+                        <div class="card-header">
+                            <img src="../../../assets/compare_loans_agnese_lo.gif" width="200" height="200">
+                        </div>
+                        <div class="card-body">
+                            <h2 class="text-center text-light">COMPARE<br/>SECTOR</h2>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class=" mx-auto">
+                <a [routerLink]="['/useripo']" style="text-decoration: none;">
+                    <div class="card bg-transparent" style="width: 150">
+                        <div class="card-header">
+                            <img src="../../../assets/ipo_grey-3.gif" width="200" height="200">
+                        </div>
+                        <div class="card-body">
+                            <h2 class="text-center text-light">VIEW<br/>IPO LIST</h2>
+                        </div>
+                    </div>
+                </a>
+            </div>
+

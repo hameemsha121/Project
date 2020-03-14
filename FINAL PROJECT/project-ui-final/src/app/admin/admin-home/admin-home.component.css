@@ -1,0 +1,18 @@
+.list-group-item {
+    
+    width:250px;
+    align-content: center;
+}
+
+.list-group{
+    align-content: center;
+}
+
+.card:hover{
+
+    transform: scale(1.1);
+    box-shadow: orangered;
+    
+
+    
+}

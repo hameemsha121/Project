@@ -1,0 +1,30 @@
+
+<div class="float-left">
+    <app-sidenav></app-sidenav>
+</div>
+<div>
+<div class="table-responsive w-auto">
+<table class="table table-dark ">
+    <tr>
+    
+        <th>ID</th>
+        <th>COMPANY NAME</th>
+        <th>CITY</th>
+        <th>TURN-OVER</th>
+        <th>C.E.O</th>
+        <th>ACTION</th>
+    </tr>
+    <tr *ngFor="let company of companies">
+        <td>{{company.id}}</td>
+        <td>{{company.name}}</td>
+        <td>{{company.city}}</td>
+        <td>{{company.turnOver}}</td>
+        <td>{{company.ceoName}}</td>
+        <td><button class="btn btn-danger" (click)="deleteCompany(company)">Delete</button>
+        <button class="btn btn-primary" (click) ="updateCompany(company)">Update</button>
+    
+    </td>
+    </tr>
+</table>
+</div>
+</div>

@@ -1,0 +1,50 @@
+<!-- <div>
+    <br/>
+    <br/>
+<div class="jumbotron jumbotron-fluid bg-transparent">
+<div class="sidenav" >
+    <!-- <div class="list-group list-group-flush"> -->
+      <!-- <a routerLink="/manage-user" id="widget" class="h4 list-group-item list-group-item-action btn-lg bg-transparent text-light">MANAGE USER</a>
+      <a routerLink="/manage-company" id="widget" class="h4 list-group-item list-group-item-action bg-transparent btn-lg text-light">MANAGE COMPANY</a>
+      <a routerLink="/exchange" id="widget" class="h4 list-group-item list-group-item-action bg-transparent btn-lg text-light">MANAGE STOCK EXCHANGE</a>
+      <a routerLink="/manage-ipo" id="widget" class="h4 list-group-item list-group-item-action bg-transparent btn-lg text-light">MANAGE IPO</a>
+      <a routerLink="/manage-stock" id="widget" class="h4 list-group-item list-group-item-action bg-transparent btn-lg text-light">MANAGE STOCK PRICE</a>
+     -->
+      <!-- </div> -->
+    <!-- </div>
+</div>
+</div> --> 
+
+
+
+  <div class="d-flex body" id="wrapper">
+
+    <!-- Sidebar -->
+    <div class="bg-dark border-right" id="sidebar-wrapper">
+     
+
+      <div class="list-group list-group-flush">
+        <a routerLink="/manage-user" class="list-group-item list-group-item-action text-light bg-transparent">MANAGE USERS</a>
+        <a routerLink="/manage-company" class="list-group-item list-group-item-action text-light bg-transparent">MANAGE COMPANY</a>
+        <a routerLink="/exchange" class="list-group-item list-group-item-action bg-transparent text-light">MANAGER STOCK EXCHANGE</a>
+        <a routerLink="/manage-ipo" class="list-group-item list-group-item-action bg-transparent text-light">MANAGE IPO</a>
+        <a routerLink="/manage-stock" class="list-group-item list-group-item-action bg-transparent text-light">MANAGE STOCKPRICE</a>
+        <a [routerLink]="['/login']" class="list-group-item list-group-item-action bg-danger text-light" (click)="logout()">LOG OUT</a>
+
+        
+      </div>
+    </div>
+    <!-- /#sidebar-wrapper -->
+
+    <!-- Page Content -->
+    <!-- /#page-content-wrapper -->
+
+  </div>
+  <script>
+    $("#menu-toggle").click(function(e) {
+      e.preventDefault();
+      $("#wrapper").toggleClass("toggled");
+    });
+  </script>
+
+

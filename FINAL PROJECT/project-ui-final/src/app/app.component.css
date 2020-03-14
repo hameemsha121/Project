@@ -1,0 +1,10 @@
+.jumbotron-short{
+    max-height: 10vh;
+}
+main{
+    min-height: 100vh;
+    background-image: url(../assets/space-grey-ipad-air-with-graph-on-brown-wooden-table-187041.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}

@@ -1,0 +1,36 @@
+<div class="container">
+    <div class="card shadow">
+        <p class="h4 card-header">Compare Company</p>
+        <div class="card-body bg-light">
+            <p class="card-text h6">Please fill the details:</p>
+            <form [formGroup]="compare" >
+                <div class="input-group mt-3 mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">Company 1</span>
+                    </div>
+                    <input list="company1"  class="form-control" formControlName="comp" >
+                    <datalist id="company1">
+                        <option *ngFor="let comp of company" value={{comp.id}}>{{comp.name}}</option>
+                    </datalist>
+                </div>
+               
+                <div class="input-group mt-3 mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">Company 2</span>
+                    </div>
+                    <input list="company2"  class="form-control" formControlName="compa" >
+                    <datalist id="company2">
+                        <option *ngFor="let comp of company" value={{comp.id}}>{{comp.name}}</option>
+                    </datalist>
+                </div>
+               
+                <div class="text-center">
+                <div class="col">
+                    <button type="submit" class="btn btn-success"  (click)="compareCompany()">Compare</button>
+                    <button type="reset" class="btn btn-danger ml-2">Reset</button>
+                </div></div>
+               
+                
+            </form>
+        </div>
+    </div></div>
